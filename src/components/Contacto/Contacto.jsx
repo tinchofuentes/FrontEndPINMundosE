@@ -32,9 +32,8 @@ const Contacto = () => {
 
         if (!form.phone.trim()) {
             errors.phone = 'El campo "Teléfono" no debe estar vacío.'
-
         } else if (!regexPhone.test(form.phone)) {
-            errors.phone = 'El campo "Teléfono" acepta solo 10 dígitos.'
+            errors.phone = 'El "Teléfono" ingresado debe tener 10 digitos y pertenecer a Argentina.'
         }
 
         if (!form.message.trim()) {
