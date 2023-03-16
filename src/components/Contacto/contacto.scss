@@ -1,0 +1,104 @@
+#contacto {
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(243, 241, 241);
+    background-image: url(../../assets/images/fondo-gris.jpg), linear-gradient(to right, rgb(241, 235, 235), rgba(248, 244, 244, 0));
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.titulos {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    width: 40%;
+    height: 50%;
+    padding-left: 10%;
+
+    .titulo-abajo-dos {
+        color: orangered;
+        font-size: xx-large;
+    }
+}
+
+.foto-form {
+    width: 60%;
+    height: 50%;
+    padding: 2%;
+    object-fit: cover;
+}
+
+.formulario {
+    height: 50%;
+    width: 80%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+    .campos-form {
+        margin: 7px;
+        display: flex;
+        justify-content: space-around;
+
+        .form-label {
+            width: 10%;
+        }
+
+        .form-control {
+            width: 90%;
+        }
+    }
+
+    #boton-enviar {
+        align-self: center;
+        background-color: orangered;
+        color: white;
+        margin: 10px;
+        padding: 10px;
+        width: 150px;
+        border: none;
+        border-radius: 25px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .titulos {
+        width: 90%;
+        height: 20%;
+        padding-left: 0%;
+        align-items: center;
+    }
+
+    .foto-form {
+        width: 90%;
+        height: 30%;
+        padding: 0%;
+    }
+
+    .formulario {
+        height: 50%;
+        width: 95%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+
+        .campos-form {
+            margin: 2px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            .form-label {
+                width: 100%;
+            }
+
+            .form-control {
+                width: 100%;
+            }
+        }
+    }
+}
