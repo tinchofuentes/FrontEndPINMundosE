@@ -18,7 +18,7 @@ const useForm = (initialData, onValidate) => {
 
         if (Object.keys(err).length === 0) {
             setLoading(true)
-            fetch('https://backend-production-89ef.up.railway.app/api/insertContactos', {
+            fetch('https://backend-production-be0f.up.railway.app/api/insertContactos', {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json',
