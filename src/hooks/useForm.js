@@ -1,4 +1,5 @@
 import { useState } from "react";
+import swal from "sweetalert";
 
 
 const useForm = (initialData, onValidate) => {
@@ -32,6 +33,13 @@ const useForm = (initialData, onValidate) => {
                     console.log(data)
                     data.success === "true" && setForm(initialData)
                     setLoading(false)
+                    setForm({ name: '', email: '', phone: '', message: '' })
+                    swal({
+                        title: "Tu mensaje se envió con éxito",
+                        text: "En breve nos pondremos en contacto",
+                        icon: "success",
+                        button: "Aceptar"
+                    });
                 })
                 .catch(error => {
                     console.log(error)
